@@ -1,0 +1,81 @@
+'scopeName': 'source.flx'
+'name': 'Felix'
+'fileTypes': ['FLX']
+'patterns': [
+  {
+    'match': '\\b(fun|proc|gen|in|and|or|not|break|do|done|else|for|if|struct|typedef|include|package|var|val|array|darray|varray|open|perform)\\b'
+    'name': 'keyword.control.felix'
+  }
+  {
+    'match': '\\b(assert|println)\\b'
+    'name': 'support.function.felix'
+  }
+  {
+    'match': '\\b(true|false|string|int|float|double|size)\\b'
+    'name': 'constant.language.felix'
+  }
+  {
+    'match': '(?<=[^.]\\.|:)\\b([A-Za-z_]\\w*)'
+    'name': 'variable.other.felix'
+  }
+  {
+    'match': '\\.\\.\\<|\\+|-|%|&|\\$|#|\\*|\\^|==|=|<=?|>=?|(?<!\\.)\\.{2}(?!\\.)'
+    'name': 'keyword.operator.felix'
+  }
+  {
+    'match': '\\b((0(x|X)[0-9a-fA-F]*)|(([0-9]+\\.?[0-9]*)|(\\.[0-9]+))((e|E)(\\+|-)?[0-9]+)?)(L|l|UL|ul|u|U|F|f|ll|LL|ull|ULL)?\\b'
+    'name': 'constant.numeric.felix'
+  }
+  {
+    'begin': '\''
+    'beginCaptures':
+      '0':
+        'name': 'punctuation.definition.string.begin.felix'
+    'end': '\''
+    'endCaptures':
+      '0':
+        'name': 'punctuation.definition.string.end.felix'
+    'name': 'string.quoted.single.felix'
+  }
+  {
+    'begin': '"'
+    'beginCaptures':
+      '0':
+        'name': 'punctuation.definition.string.begin.felix'
+    'end': '"'
+    'endCaptures':
+      '0':
+        'name': 'punctuation.definition.string.end.felix'
+    'name': 'string.quoted.single.felix'
+  }
+  {
+    'begin': '"""'
+    'beginCaptures':
+      '0':
+        'name': 'punctuation.definition.string.begin.felix'
+    'end': '"""'
+    'endCaptures':
+      '0':
+        'name': 'punctuation.definition.string.end.felix'
+    'name': 'string.quoted.other.multiline.felix'
+  }
+  {
+    'begin': '/\\*'
+    'beginCaptures':
+      '0':
+        'name': 'punctuation.definition.comment.begin.felix'
+    'end': '\\*/'
+    'endCaptures':
+      '0':
+        'name': 'punctuation.definition.comment.end.felix'
+    'name': 'comment.block.felix'
+  }
+  {
+    'begin': '//'
+    'beginCaptures':
+      '0':
+        'name': 'punctuation.definition.comment.felix'
+    'end': '\\n'
+    'name': 'comment.line.felix'
+  }
+]
