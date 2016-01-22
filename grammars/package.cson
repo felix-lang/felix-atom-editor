@@ -3,15 +3,15 @@
 'fileTypes': ['FLX']
 'patterns': [
   {
-    'match': '\\b(fun|proc|gen|in|and|or|not|break|do|done|else|for|if|struct|typedef|include|package|var|val|array|darray|varray|open|perform)\\b'
+    'match': '\\b(fun|proc|gen|in|and|or|not|break|do|done|else|for|if|struct|typedef|include|package|var|val|open|perform|match|endmatch|union|regdef|class|return|object|macro|of|instance|requires)\\b'
     'name': 'keyword.control.felix'
   }
   {
-    'match': '\\b(assert|println)\\b'
+    'match': '\\b(assert|println|charset|RE2)\\b'
     'name': 'support.function.felix'
   }
   {
-    'match': '\\b(true|false|string|int|float|double|size)\\b'
+    'match': '\\b(true|false|string|int|float|double|size|array|darray|varray|list|opt|len|regex|str)\\b'
     'name': 'constant.language.felix'
   }
   {
