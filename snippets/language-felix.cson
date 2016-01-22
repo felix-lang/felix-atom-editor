@@ -1,0 +1,25 @@
+'.source.flx':
+  'function':
+    'prefix': 'fun'
+    'body': 'fun ${1:FunctionName} (${2:Args}) => ${0:Body};'
+  'function':
+    'prefix': 'mfun'
+    'body': 'fun ${1:FunctionName} : ${2:Types} = \n    | ${3:Case} => ${4:Body}\n;'
+  'lambda func':
+    'prefix': 'afun'
+    'body': '(fun (${1:Args}) => ${0:Body})'
+  'lambda proc':
+    'prefix': 'aproc'
+    'body': '(proc (${1:Args}) { ${0:Body} })'
+  'map':
+    'prefix': 'map'
+    'body': 'map (fun (${1:Args}) => ${2:Expr}) ${3:Data}'
+  'iterate':
+    'prefix': 'iter'
+    'body': 'iter (proc (${1:Args}) { ${2:Stmts} }) ${3:Data}'
+  'class':
+    'prefix': 'class'
+    'body': 'class ${1:Name} {\n    ${2:Body}\n}'
+  'instance':
+    'prefix': 'instance'
+    'body': 'instance ${1:Name}[${2:Type}] {\n    ${3:Body}\n}'

@@ -1,9 +1,24 @@
 {
   "name": "language-felix",
-  "version": "0.0.1",
   "description": "Syntax highlighting for Felix",
+  "private": false,
+  "author": {
+    "name": "Garrett Bluma",
+    "email": "garrett.bluma@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/felix-lang/felix-atom-editor.git"
+  },
+  "version": "0.0.2",
+  "license": "FFAU",
   "engines": {
-    "atom": "*",
-    "node": "*"
-  }
+    "atom": ">=0.50.0"
+  },
+  "dependencies": {},
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/felix-lang/felix-atom-editor/issues"
+  },
+  "homepage": "https://github.com/felix-lang/felix-atom-editor#readme"
 }
