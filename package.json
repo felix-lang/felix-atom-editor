@@ -1,5 +1,6 @@
 {
   "name": "language-felix",
+  "main": "./lib/main",
   "description": "Syntax highlighting for Felix",
   "private": false,
   "author": {
@@ -10,8 +11,8 @@
     "type": "git",
     "url": "git+https://github.com/felix-lang/felix-atom-editor.git"
   },
-  "version": "0.0.2",
-  "license": "FFAU",
+  "version": "0.0.8",
+  "license": "Free For Any Use",
   "engines": {
     "atom": ">=0.50.0"
   },
@@ -20,5 +21,13 @@
   "bugs": {
     "url": "https://github.com/felix-lang/felix-atom-editor/issues"
   },
-  "homepage": "https://github.com/felix-lang/felix-atom-editor#readme"
+  "homepage": "https://github.com/felix-lang/felix-atom-editor#readme",
+
+  "providedServices": {
+      "autocomplete.provider": {
+        "versions": {
+          "2.0.0": "provide"
+        }
+      }
+    }
 }

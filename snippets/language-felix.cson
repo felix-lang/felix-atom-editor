@@ -23,3 +23,6 @@
   'instance':
     'prefix': 'instance'
     'body': 'instance ${1:Name}[${2:Type}] {\n    ${3:Body}\n}'
+  'match':
+    'prefix': 'match'
+    'body': 'match ${1:expr} with\n    | ${2:expr} => ${3:result}\nendmatch'

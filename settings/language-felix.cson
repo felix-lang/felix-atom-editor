@@ -1,5 +1,1 @@
-'.source.flx':
-  'editor':
-    'commentStart': '// '
-    'increaseIndentPattern': '\\b(else|with|fun|do)\s*$'
-    'decreaseIndentPattern': '^\\s*(elseif|else|endmatch|,?|\\}\\)?).*$'
+

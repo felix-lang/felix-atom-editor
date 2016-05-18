@@ -3,7 +3,7 @@
 'fileTypes': ['FLX']
 'patterns': [
   {
-    'match': '\\b(fun|proc|gen|in|and|or|not|break|do|done|else|for|if|then|struct|typedef|include|package|var|val|open|syntax|perform|match|with|endmatch|union|regdef|class|return|object|macro|of|instance|requires|case)\\b'
+    'match': '\\b(fun|proc|gen|in|and|or|not|break|do|done|else|for|if|then|struct|typedef|include|package|let|var|val|open|syntax|perform|match|with|endmatch|union|regdef|class|return|object|macro|of|instance|requires|case)\\b'
     'name': 'keyword.control.felix'
   }
   {
